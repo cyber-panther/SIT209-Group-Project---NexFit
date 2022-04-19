@@ -1,0 +1,36 @@
+/* Container holding the image and the text */
+.sport-container {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.sport-container img {
+  /* width: 100%; */
+  transition: 0.5s ease;
+}
+
+.sport-container:hover img {
+  opacity: 0.2;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* font-size: 4vh; */
+  opacity: 10;
+  transition: 0.5s ease;
+}
+
+/* .centered .btn
+{
+  margin-top: 2vw;
+    font-size: 4vw;
+} */
+
+.sport-container:hover .centered {
+  opacity: 1;
+}

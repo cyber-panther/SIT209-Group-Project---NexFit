@@ -1,0 +1,72 @@
+.custom-select {
+    width: 100%;
+    height: auto;
+}
+
+.icon {
+    width: 1em;
+    height: auto;
+}
+
+.myimg {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.table_dimension {
+    padding: .5em;
+}
+
+.mydimension {
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.adjust {
+    height: 2em;
+}
+
+.myfooter {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    line-height: 2em;
+}
+
+/*  */
+
+.logcontainer {
+    margin-top: 250px;
+}
+
+img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.input {
+    margin: auto;
+    max-width: 50%;
+}
+
+input:hover {
+    background-color: rgb(240, 234, 234);
+}
+
+#button {
+    display: block;
+    margin: auto;
+    max-width: 25%;
+    margin-top: 20px;
+    padding: 5px 45px 10px 45px;
+}
+
+#button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}

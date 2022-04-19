@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A mock web page" />
+    <meta name="author" content="Agrim Gautam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexfit</title>
+
+    <link rel="icon" href="assets/img/logo.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="assets/css/style-sport.css">
+</head>
+
+<body id="sport">
+    <div class="navbar bg-dark px-3">
+        <div ><img src="assets/img/brand_logo.png" alt="" width="40px" /></div>
+        <div>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-light" href="/account">Back</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="sport-capacity">
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="sport-container">
+                    <img class="img-thumbnail" src="assets/img/football.jpg" alt="football">
+
+                    <div class="centered text-dark font-weight-bold">
+                        <div><u>Field F1</u></div>
+                        <div>Football</div>
+                        <div>Player - <span id="football-num"></span></div>
+                        <div>Max - <span id="football-num-max">12</span></div>
+                        <div class="btn btn-outline-info btn-block disabled" id="play-football">Play</div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="sport-container">
+                    <img class="img-thumbnail" src="assets/img/basketball.jpg" alt="basketball">
+                    <div class="centered text-dark font-weight-bold">
+                        <div><u>Court 3</u></div>
+                        <div>Basketball</div>
+                        <div>Player - <span id="basketball-num"></span></div>
+                        <div>Max - <span id="basketball-num-max">10</span></div>
+                        <div class="btn btn-outline-info btn-block" id="play-basketball">Play</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-2">
+                <div class="sport-container">
+                    <img class="img-thumbnail" src="assets/img/lawntennis.jpg" alt="lawntennis">
+                    <div class="centered text-dark font-weight-bold">
+                        <div><u>Court 1</u></div>
+                        <div>LawnTennis</div>
+                        <div>Player - <span id="lawntennis-num"></span></div>
+                        <div>Max - <span id="lawntennis-num-max">4</span></div>
+                        <div class="btn btn-outline-info btn-block" id="play-lawntennis">Play</div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4 my-2">
+                <div class="sport-container">
+                    <img class="img-thumbnail" src="assets/img/next.png" alt="Comming soon...">
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <div class="container text-center p-4" id="QR-sport">
+        <h1 class="border mb-5">Scan QR</h1>
+        <div id="qrcode" class="d-flex justify-content-center"></div>
+        <a class="btn btn-outline-dark btn-lg mt-5 btn-block" id="capacity_update" href="/timer">Check In</a>
+    </div>
+
+
+    <footer class="bg-dark text-light text-center fixed-bottom">
+        <p> Copyright by NexFit 2022 </p>
+    </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script src="assets/js/script-sport.js"></script>
+
+</html>

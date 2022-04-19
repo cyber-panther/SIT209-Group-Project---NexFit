@@ -1,0 +1,23 @@
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+}
+
+.navbar {
+  border-radius: 0 0 10px 10px;
+}
+
+.myhome {
+  background: url(../img/bg-home.jpg);
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  padding: 3em;
+}
+
+.service-card {
+  margin-bottom: 1em;
+  min-height: 10vw;
+}

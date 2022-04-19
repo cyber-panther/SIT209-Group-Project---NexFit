@@ -1,0 +1,56 @@
+body {
+    background: #007bff;
+    background: linear-gradient(to right, #0062e6, #335cff);
+  }
+  
+  .cont {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 3px;
+  }
+
+  .user {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    padding: 0.25rem;
+  }
+  
+  .user:hover {
+    background-color: rgb(218, 216, 216);
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  
+  input:hover {
+    background-color: rgb(207, 200, 200);
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0062e6;
+    color: white;
+    transition: 0.5s;
+  }
+  
+  .div1 {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+  }
+  
+  #div2 {
+    margin-left: 20px;
+    width: 30%;
+  }
+  
+  .mySeparator {
+    height: 0.5px;
+    width: 80%;
+    background-color: whitesmoke;
+  }
+  

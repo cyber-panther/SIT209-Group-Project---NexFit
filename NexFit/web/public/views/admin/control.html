@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A web page about Digital Twin" />
+    <meta name="author" content="Agrim Gautam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style-admin.css" />
+</head>
+
+<body id="admin-control">
+    <header class="bg-dark text-light text-center" style="padding: .5em;">
+        <h3>Howdy Administrator!</h3>
+    </header>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-12 table_dimension">
+
+                <div class="shadow-lg rounded mydimension h-100">
+                    <!-- Group of material radios - option 1 -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="room_select_1" name="groupOfMaterialRadios"
+                            value=0 onclick="room_indicate(id)" checked>
+                        <label class="form-check-label" for="room_select_1">Basketball Court</label>
+                    </div>
+                    <!-- Group of material radios - option 2 -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="room_select_2" name="groupOfMaterialRadios"
+                            value=1 onclick="room_indicate(id)">
+                        <label class="form-check-label" for="room_select_2">Squash Court</label>
+                    </div>
+                    <!-- Group of material radios - option 3 -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="room_select_3" name="groupOfMaterialRadios"
+                            value=2 onclick="room_indicate(id)">
+                        <label class="form-check-label" for="room_select_3">Table Tennis Court</label>
+                    </div>
+                    <!-- Group of material radios - option 4 -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="room_select_4" name="groupOfMaterialRadios"
+                            value=3 onclick="room_indicate(id)">
+                        <label class="form-check-label" for="room_select_4">Football Turf</label>
+                    </div>
+                    <!-- Group of material radios - option 5 -->
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="room_select_5" name="groupOfMaterialRadios"
+                            value=4 onclick="room_indicate(id)">
+                        <label class="form-check-label" for="room_select_5">Badminton Court</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-12 table_dimension">
+
+                <div class="container-fluid shadow-lg rounded mydimension h-100">
+                    <div>
+                        <img src="https://cyber-panther.github.io/Digital-Twin/img/lightbulb_off.svg" alt="LED"
+                            class="icon" id="icon_status">
+
+                        <span id="text_status">Lights OFF</span>
+
+                        <span class="custom-control custom-switch float-right">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1"
+                                onchange="switchchange()" />
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                        </span>
+                    </div>
+                    <div class="adjust"></div>
+                    <div>
+                        <select class="custom-select" id="color_select" onchange="color_indicate()" disabled>
+                            <option selected>White</option>
+                            <option value="Red">Red</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Green">Green</option>
+                            <option value="Yellow">Yellow</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-4 text-center d-flex justify-content-center table_dimension">
+                <div class="shadow-lg rounded mydimension bg-dark d-flex justify-content-center">
+
+                    <img class="myimg" id="color_indicator"
+                        src="https://cyber-panther.github.io/Digital-Twin/img/bulb_off.png" alt="bulb">
+
+                </div>
+            </div>
+
+
+            <div class="col-md-8 col-8 text-center table_dimension">
+                <div class="shadow-lg rounded mydimension"><img class="img-fluid myimg" id="room_indicator"
+                        src="https://cyber-panther.github.io/Digital-Twin/img/Bluprint_l.png" alt="bluprint"></div>
+            </div>
+        </div>
+        <br />
+
+        <a type="button" class="btn btn-secondary rounded-circle float-right mb-5" data-toggle="tooltip"
+            title="Back to main menu" href="/">
+            &#8592;
+        </a>
+    </div>
+
+</body id="admin">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+<script src="assets/js/script-admin.js"></script>
+
+</html>
