@@ -1,6 +1,10 @@
 const API_URL = "http://localhost:5000/api";
 var current = "";
-var capacity = [];
+
+$("#football-max").hide();
+$("#basketball-max").hide();
+$("#lawntennis-max").hide();
+// $('#id').show();
 
 if ($("#QR-sport").length) {
   document.getElementById("QR-sport").style.display = "none";
@@ -10,30 +14,30 @@ $.get(`${API_URL}/sport`)
     document.getElementById("basketball-num").innerHTML = response[0].number;
     document.getElementById("football-num").innerHTML = response[1].number;
     document.getElementById("lawntennis-num").innerHTML = response[2].number;
-    capacity = response;
 
-    /* if (response[0] == 12) {
-      $("#play-football").text("New Value");
-      $("#play-football").prop("disabled", true);
-    } */
+    if (response[1].number == 12) {
+      $("#play-football").hide();
+      $("#football-max").show();
+    }
+
+    if (response[0].number == 10) {
+      $("#play-basketball").hide();
+      $("#basketball-max").show();
+    }
+
+    if (response[2].number == 4) {
+      $("#play-lawntennis").hide();
+      $("#lawntennis-max").show();
+    }
   })
   .catch((error) => {
     console.error(`Error: ${error}`);
   });
 
 $("#play-football").on("click", () => {
-  if (capacity[0] < 12) {
-    makeCode(`${localStorage.getItem("user")} started playing Football`);
-    current = "football";
-  } else {
-    $("#play-football").text("Max Player");
-  }
+  makeCode(`${localStorage.getItem("user")} started playing Football`);
+  current = "football";
 });
-
-// $("#play-football").text("New Valu");
-// document.getElementById("play-football").disabled = true;
-// // document.getElementById("play-football").style.display = "none";
-// // $("#play-football").attr("disabled", true);
 
 $("#play-basketball").on("click", () => {
   makeCode(`${localStorage.getItem("user")} started playing Basketball`);

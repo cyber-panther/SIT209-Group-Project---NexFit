@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 const base = `${__dirname}/public`;
 
 app.use(express.static("public"));
@@ -37,7 +37,7 @@ app.get("/admin-control", (req, res) => {
 
 /* User features */
 
-// User Account Page 
+// User Account Page
 app.get("/account", (req, res) => {
   res.sendFile(`${base}/views/account/user.html`);
 });
@@ -70,7 +70,26 @@ app.get("/calculator", (req, res) => {
 
 // Nexfit Store
 app.get("/store", (req, res) => {
-  res.sendFile(`${base}/views/account/store.html`);
+  res.sendFile(`${base}/views/account/store/store.html`);
+});
+
+app.get("/products", (req, res) => {
+  res.sendFile(`${base}/views/account/store/products.html`);
+});
+app.get("/air_jordan", (req, res) => {
+  res.sendFile(`${base}/views/account/store/air_jordan.html`);
+});
+app.get("/fcb_jersey", (req, res) => {
+  res.sendFile(`${base}/views/account/store/fcb_jersey.html`);
+});
+app.get("/nba_jersey", (req, res) => {
+  res.sendFile(`${base}/views/account/store/nba_jersey.html`);
+});
+app.get("/nike_mercurial", (req, res) => {
+  res.sendFile(`${base}/views/account/store/nike_mercurial.html`);
+});
+app.get("/red_tshirt", (req, res) => {
+  res.sendFile(`${base}/views/account/store/red_tshirt.html`);
 });
 
 app.get("/working", (req, res) => {

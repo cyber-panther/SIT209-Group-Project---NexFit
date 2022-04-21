@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-const port = 5000;
+const port = 5005;
 
 app.get('/api/devices', (req, res) => {
   Device.find({}, (err, devices) => {

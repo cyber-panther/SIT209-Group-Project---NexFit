@@ -67,12 +67,15 @@
                         <span id="text_status">Lights OFF</span>
 
                         <span class="custom-control custom-switch float-right">
+
                             <input type="checkbox" class="custom-control-input" id="customSwitch1"
                                 onchange="switchchange()" />
                             <label class="custom-control-label" for="customSwitch1"></label>
                         </span>
                     </div>
+
                     <div class="adjust"></div>
+
                     <div>
                         <select class="custom-select" id="color_select" onchange="color_indicate()" disabled>
                             <option selected>White</option>
@@ -82,6 +85,7 @@
                             <option value="Yellow">Yellow</option>
                         </select>
                     </div>
+
                 </div>
 
             </div>
@@ -98,18 +102,17 @@
 
             <div class="col-md-8 col-8 text-center table_dimension">
                 <div class="shadow-lg rounded mydimension"><img class="img-fluid myimg" id="room_indicator"
-                        src="https://cyber-panther.github.io/Digital-Twin/img/Bluprint_l.png" alt="bluprint"></div>
+                        src="assets/img/admin/Basketball_court.png" alt="bluprint"></div>
             </div>
         </div>
         <br />
-
-        <a type="button" class="btn btn-secondary rounded-circle float-right mb-5" data-toggle="tooltip"
-            title="Back to main menu" href="/">
-            &#8592;
-        </a>
     </div>
 
-</body id="admin">
+    <a type="button" class="btn btn-secondary rounded-circle float-right mb-5 mx-5" data-toggle="tooltip"
+        title="Back to main menu" href="/">
+        &#8592;
+    </a>
+</body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
